@@ -15,19 +15,18 @@ angular.module('notesApp', [])
   .config(['$httpProvider', function($httpProvider) {
     // Every POST data becoms jQuery style
     $httpProvider.defaults.transformRequest.push(
-        function(data) {
-      var requestStr;
-      if (data) {
-        data = JSON.parse(data);
-        for (var key in data) {
-          if (requestStr) {
-            requestStr += '&' + key + '=' + data[key];
-          } else {
-            requestStr = key + '=' + data[key];
+      function(data) {
+        var requestStr;
+        if (data) {
+          data = JSON.parse(data);
+          for (var key in data) {
+            if (requestStr) {
+              requestStr += '&' + key + '=' + data[key];
+            } else {
+              requestStr = key + '=' + data[key];
+            }
           }
         }
-      }
-
       return requestStr;
     });
     // Set the content type to be FORM type for all post requests
