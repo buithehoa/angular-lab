@@ -5,7 +5,7 @@
 </head>
 <body ng-app="dynamicFormApp">
 
-  <div ng-controller="MainCtrl as mainCtrl">
+  <div ng-controller="MainCtrl as mainCtrl" ng-cloak>
     <form novalidate="" name="mainForm">
       <form-element type="text"
                     name="uname"
@@ -21,7 +21,7 @@
         </validation>
       </form-element>
 
-      Username is {{mainCtrl.username}}
+      <p>Username is {{mainCtrl.username}}</p>
 
       <form-element type="password"
                     name="pwd"
@@ -36,7 +36,7 @@
           Password must only be alphanumeric characters
         </validation>
       </form-element>
-      Password is {{mainCtrl.password}}
+      <p>Password is {{mainCtrl.password}}</p>
 
       <button>Submit</button>
     </form>

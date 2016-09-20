@@ -26,7 +26,7 @@ angular.module('dynamicFormApp')
 
         // Start generating final element HTML
         var elementHtml = '<div>' +
-          '<label>' + $attrs.label + '</label>';
+          '<label>' + $attrs.label + '</label>:&nbsp;';
         elementHtml += '<input type="' + $attrs.type +
                             '" name="' + inputName +
                             '" ng-model="' + $attrs.bindTo + '"';
@@ -43,9 +43,9 @@ angular.module('dynamicFormApp')
         elementHtml += '>';
 
         elementHtml +=
-            '<span ng-repeat="(key, text) in validators" ' +
+            '<p ng-repeat="(key, text) in validators" ' +
                  ' ng-show="hasError(key)"' +
-                 ' ng-bind="text"></span>';
+                 ' ng-bind="text"></p>';
 
         elementHtml += '</div>';
         $element.html(elementHtml);
