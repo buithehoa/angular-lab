@@ -1,8 +1,7 @@
 // File: chapter13/directive-google-chart/googleChartLoader.js
-angular.module('googleChartApp')
-  .factory('googleChartLoaderPromise',
-      ['$q', '$rootScope', '$window',
-      function($q, $rootScope, $window) {
+angular.module('googleChartApp').factory('googleChartLoaderPromise',
+  ['$q', '$rootScope', '$window',
+  function($q, $rootScope, $window) {
     // Create a Deferred Object
     var deferred = $q.defer();
 
@@ -18,7 +17,8 @@ angular.module('googleChartApp')
             deferred.resolve();
           });
         }
-      });
+      }
+    );
 
     // Return the promise object for the directive
     // to chain onto.
