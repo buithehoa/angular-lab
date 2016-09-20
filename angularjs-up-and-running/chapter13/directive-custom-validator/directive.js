@@ -7,7 +7,12 @@ angular.module('stockMarketApp')
       require: 'ngModel',
       link: function($scope, $element, $attrs, ngModelCtrl) {
         ngModelCtrl.$validators.zip = function(value) {
+          console.log("You called me?");
           return zipCodeRegex.test(value);
+        };
+
+        ngModelCtrl.$validators.whatever = function(value) {
+          console.log("This is where validation rule is defined.");
         };
       }
     };
