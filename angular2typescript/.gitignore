@@ -1,0 +1,16 @@
+.preview*
+.idea*
+.vscode*
+
+
+
+*.map
+
+jspm_packages
+
+node_modules
+build
+
+npm-debug.log
+
+/appendixb/js/*

@@ -1,0 +1,27 @@
+{
+  "name": "form-samples",
+  "description": "Demo application showing Angular Form API",
+  "homepage": "https://www.manning.com/books/angular-2-development-with-typescript",
+  "private": true,
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.0",
+    "@angular/compiler": "^2.4.0",
+    "@angular/core": "^2.4.0",
+    "@angular/forms": "^2.4.0",
+    "@angular/http": "^2.4.0",
+    "@angular/platform-browser": "^2.4.0",
+    "@angular/platform-browser-dynamic": "^2.4.0",
+    "@angular/router": "^3.4.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.7.6",
+    "systemjs": "0.19.37"
+  },
+  "devDependencies": {
+    "live-server": "^1.0.0",
+    "typescript": "^2.1.0"
+  }
+}

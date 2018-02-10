@@ -1,0 +1,12 @@
+{
+  "name": "first-webpack-project",
+  "version": "1.0.0",
+  "description": "Hello world with webpack-dev-server",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}

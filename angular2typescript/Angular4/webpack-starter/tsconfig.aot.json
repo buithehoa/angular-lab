@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "target": "es5",
+    "types": ["jasmine"],
+    "lib": ["es6", "dom", "es2015.iterable"],
+
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "suppressImplicitAnyIndexErrors": true
+  },
+
+  "files": [
+    "src/main.ts",
+    "src/typings.d.ts"
+  ],
+
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit" : true
+  }
+
+}
