@@ -2,6 +2,7 @@
   "name": "angular-seed",
   "description": "",
   "scripts": {
+    "start": "live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true
