@@ -2,15 +2,19 @@
 <html>
 
   <head>
-    <title>Angular seed project</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CH2: Online Auction</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
-    <script src="node_modules/typescript/lib/typescript.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
+
+    <script src="node_modules/typescript/lib/typescript.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
+
     <script>
       System.import('app').catch(function(err) {
         console.error(err);
@@ -19,7 +23,7 @@
   </head>
 
   <body>
-    <app>Loading...</app>
+    <auction-application></auction-application>
   </body>
 
 </html>
